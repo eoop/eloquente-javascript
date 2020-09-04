@@ -1,18 +1,17 @@
-# Functions
+# Funções
 
 {{quote {author: "Donald Knuth", chapter: true}
 
-People think that computer science is the art of geniuses but the
-actual reality is the opposite, just many people doing things that
-build on each other, like a wall of mini stones.
-
+As pessoas pensam que a ciência da computação é a arte dos gênios mas a realidade atual é o oposto, são várias pessoas fazendo coisas que constroem-se umas sobre as outras, como uma parede de pequenas pedras.
 quote}}
 
 {{index "Knuth, Donald"}}
 
-{{figure {url: "img/chapter_picture_3.jpg", alt: "Picture of fern leaves with a fractal shape", chapter: framed}}}
+{{figure {url: "img/chapter_picture_3.jpg", alt: "Foto de folhas de samambaia com um formato fractal", chapter: framed}}}
 
 {{index function, [code, "structure of"]}}
+
+Funções são o pão e manteira da programação Javascript. O conceito de embrulhar um pedaço do programa em um valor tem muitos usos. Isto nôs dá uma forma the estruturar grandes programas, para reduzir repetição
 
 Functions are the bread and butter of JavaScript programming. The
 concept of wrapping a piece of program in a value has many uses. It
