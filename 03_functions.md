@@ -11,26 +11,14 @@ quote}}
 
 {{index function, [code, "structure of"]}}
 
-Funções são o pão e manteira da programação Javascript. O conceito de embrulhar um pedaço do programa em um valor tem muitos usos. Isto nôs dá uma forma the estruturar grandes programas, para reduzir repetição
+Funções são o pão e manteira da programação Javascript. O conceito de embrulhar um pedaço do programa em um valor tem muitos usos. Isto nôs dá uma forma the estruturar grandes programas, para reduzir repetição, para associar nomes com subprogramas, e para isolar estes programas um do outro.
 
-Functions are the bread and butter of JavaScript programming. The
-concept of wrapping a piece of program in a value has many uses. It
-gives us a way to structure larger programs, to reduce repetition, to
-associate names with subprograms, and to isolate these subprograms
-from each other.
-
-The most obvious application of functions is defining new
-((vocabulary)). Creating new words in prose is usually bad style. But
-in programming, it is indispensable.
+// REVISÃO: Melhor maneira de traduzir: Creating new words in prose is usually bad style
+A aplicação mais óbvia de funções é definir novos ((vocabulary)). Criando novas palavras em prosa normalmente é um estilo ruim. Mas na programação, é indispensável.
 
 {{index abstraction, vocabulary}}
 
-Typical adult English speakers have some 20,000 words in their
-vocabulary. Few programming languages come with 20,000 commands built
-in. And the vocabulary that _is_ available tends to be more precisely
-defined, and thus less flexible, than in human language. Therefore, we
-usually _have_ to introduce new concepts to avoid repeating ourselves
-too much.
+Tipicamente falantes adultos de inglês tem algo em torno de 20,000 palavras em seu vocabulário. Poucas linguagens de programação vêm com 20,000 comandos criados. E o vocabulário que _é_ disponível tende a ser mais precisamente definido, e portamente menos flexivel, que uma linguagem humana. Consequentemente, nós normalmente _temos_ que introduzir novos conceitos para evitar nôs repetir demais.
 
 ## Defining a function
 
@@ -886,6 +874,7 @@ Resist that urge. You won't get any real work done—you'll just be
 writing code that you never use.
 
 {{id pure}}
+
 ## Functions and side effects
 
 {{index "side effect", "pure function", [function, purity]}}
@@ -982,6 +971,7 @@ console.log(min(0, 10));
 console.log(min(0, -10));
 // → -10
 ```
+
 if}}
 
 {{hint
@@ -1007,11 +997,11 @@ whether a number is even or odd by using `% 2` to see whether it's
 divisible by two. Here's another way to define whether a positive
 whole number is even or odd:
 
-- Zero is even.
+-   Zero is even.
 
-- One is odd.
+-   One is odd.
 
-- For any other number _N_, its evenness is the same as _N_ - 2.
+-   For any other number _N_, its evenness is the same as _N_ - 2.
 
 Define a recursive function `isEven` corresponding to this
 description. The function should accept a single parameter (a
@@ -1097,8 +1087,7 @@ if}}
 {{index "bean counting (exercise)", ["length property", "for string"], "counter variable"}}
 
 Your function will need a ((loop)) that looks at every character in
-the string. It can run an index from zero to one below its length (`<
-string.length`). If the character at the current position is the same
+the string. It can run an index from zero to one below its length (`< string.length`). If the character at the current position is the same
 as the one the function is looking for, it adds 1 to a counter
 variable. Once the loop has finished, the counter can be returned.
 
