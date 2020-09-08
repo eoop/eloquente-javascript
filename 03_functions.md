@@ -14,7 +14,7 @@ quote}}
 Funções são o pão e manteira da programação Javascript. O conceito de embrulhar um pedaço do programa em um valor tem muitos usos. Isto nôs dá uma forma the estruturar grandes programas, para reduzir repetição, para associar nomes com subprogramas, e para isolar estes programas um do outro.
 
 [TODO: ref #455]<Creating new words in prose is usually bad style>[/TODO]
-A aplicação mais óbvia de funções é definir novos ((vocabulary)). Criando novas palavras em prosa normalmente é um estilo ruim. Mas na programação, é indispensável.
+A aplicação mais óbvia das funções é quando queremos definir novos vocabulários. Criar novas palavras no nosso dia a dia geralmente não é uma boa ideia, porém em programação é indispensável.
 
 {{index abstraction, vocabulary}}
 
