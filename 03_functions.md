@@ -20,7 +20,7 @@ A aplicação mais óbvia das funções é quando queremos definir novos vocabul
 Um adulto típico tem por volta de 20.000 palavras em seu vocabulário. Apenas algumas linguagens de programação possuem 20.000 conceitos embutidos, sendo que o vocabulário que se tem disponível tende a ser bem definido e, por isso, menos flexível do que a linguagem usada por humanos. Por isso, normalmente temos que adicionar conceitos do nosso próprio vocabulário para evitar repetição.
 
 
-## Defining a function
+## Definindo Uma Função
 
 {{index "square example", [function, definition], [binding, definition]}}
 
@@ -66,26 +66,16 @@ console.log(power(2, 10));
 
 {{index "return value", "return keyword", undefined}}
 
-Some functions produce a value, such as `power` and `square`, and some
-don't, such as `makeNoise`, whose only result is a ((side effect)). A
-`return` statement determines the value the function returns. When
-control comes across such a statement, it immediately jumps out of the
-current function and gives the returned value to the code that called
-the function. A `return` keyword without an expression after it will
-cause the function to return `undefined`. Functions that don't have a
-`return` statement at all, such as `makeNoise`, similarly return
-`undefined`.
+Algumas funções produzem um valor, como as funções `power` e `square` acima, e outras não, como no exemplo de `makeNoise`, que produz apenas um “efeito colateral”. A declaração `return` é usada para determinar o valor de retorno da função. Quando o controle de execução interpreta essa declaração, ele sai imediatamente do contexto da função atual e disponibiliza o valor retornado para o código que invocou a função. A palavra-chave `return` sem uma expressão após, irá fazer com que o retorno da função seja `undefined`.
 
 {{index parameter, [function, application], [binding, "from parameter"]}}
 
-Parameters to a function behave like regular bindings, but their
-initial values are given by the _caller_ of the function, not the code
-in the function itself.
-
-## Bindings and scopes
+## Parâmetros e Escopos
 
 {{indexsee "top-level scope", "global scope"}}
 {{index "var keyword", "global scope", [binding, global], [binding, "scope of"]}}
+
+Os parâmetros de uma função comportam-se como variáveis regulares. Seu valor inicial é informado por quem invocou a função e não pelo código da função em si.
 
 Each binding has a _((scope))_, which is the part of the program
 in which the binding is visible. For bindings defined outside of any
