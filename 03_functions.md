@@ -13,20 +13,18 @@ quote}}
 
 Funções são o pão e manteira da programação Javascript. O conceito de embrulhar um pedaço do programa em um valor tem muitos usos. Isto nôs dá uma forma the estruturar grandes programas, para reduzir repetição, para associar nomes com subprogramas, e para isolar estes programas um do outro.
 
-[TODO: ref #455]<Creating new words in prose is usually bad style>[/TODO]
 A aplicação mais óbvia das funções é quando queremos definir novos vocabulários. Criar novas palavras no nosso dia a dia geralmente não é uma boa ideia, porém em programação é indispensável.
 
 {{index abstraction, vocabulary}}
 
-Tipicamente falantes adultos de inglês tem algo em torno de 20,000 palavras em seu vocabulário. Poucas linguagens de programação vêm com 20,000 comandos criados. E o vocabulário que _é_ disponível tende a ser mais precisamente definido, e portamente menos flexivel, que uma linguagem humana. Consequentemente, nós normalmente _temos_ que introduzir novos conceitos para evitar nôs repetir demais.
+Um adulto típico tem por volta de 20.000 palavras em seu vocabulário. Apenas algumas linguagens de programação possuem 20.000 conceitos embutidos, sendo que o vocabulário que se tem disponível tende a ser bem definido e, por isso, menos flexível do que a linguagem usada por humanos. Por isso, normalmente temos que adicionar conceitos do nosso próprio vocabulário para evitar repetição.
+
 
 ## Defining a function
 
 {{index "square example", [function, definition], [binding, definition]}}
 
-A function definition is a regular binding where the value of the
-binding is a function. For example, this code defines `square` to
-refer to a function that produces the square of a given number:
+Uma definição de função nada mais é do que uma definição normal de uma variável, na qual o valor recebido pela variável é uma função. Por exemplo, o código a seguir define uma variável `square` que se refere a uma função que retorna o quadrado do número dado:
 
 ```
 const square = function(x) {
@@ -40,18 +38,11 @@ console.log(square(12));
 {{indexsee "curly braces", braces}}
 {{index [braces, "function body"], block, [syntax, function], "function keyword", [function, body], [function, "as value"], [parentheses, arguments]}}
 
-A function is created with an expression that starts with the keyword
-`function`. Functions have a set of _((parameter))s_ (in this case,
-only `x`) and a _body_, which contains the statements that are to be
-executed when the function is called. The function body of a function
-created this way must always be wrapped in braces, even when it
-consists of only a single ((statement)).
+Uma função é criada por meio de uma expressão que se inicia com a palavra-chave `function`. Funções podem receber uma série de parâmetros (nesse caso, somente `x`) e um "corpo", contendo as declarações que serão executadas quando a função for invocada. O "corpo" da função deve estar sempre envolvido por chaves, mesmo quando for formado por apenas uma simples declaração (como no exemplo anterior).
 
 {{index "power example"}}
 
-A function can have multiple parameters or no parameters at all. In
-the following example, `makeNoise` does not list any parameter names,
-whereas `power` lists two:
+Uma função pode receber múltiplos parâmetros ou nenhum parâmetro. No exemplo a seguir, `makeNoise` não recebe nenhum parâmetro, enquanto `power` recebe dois:
 
 ```
 const makeNoise = function() {
